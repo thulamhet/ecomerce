@@ -22,7 +22,7 @@ const Login = () => {
       <TouchableOpacity
         style={styles.loginBtn}
         //@ts-ignore
-        onPress = {()=> navigation.navigate('Home')}
+        // onPress = {()=> navigation.navigate('Home')}
       >
         <Text style={{color: 'white'}}>Login</Text>
       </TouchableOpacity>
