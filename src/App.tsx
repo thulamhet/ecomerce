@@ -6,6 +6,8 @@ import Home from "./screens/HomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import ItemDetail from "./screens/ItemDetail";
 import Login from "./screens/Login/LoginScreen";
+import ForgotPassword from "./screens/Login/ForgotPasswordScreen";
+import Register from "./screens/Login/RegisterScreen";
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
         <Stack.Screen  name="Login" component={Login} />
         <Stack.Screen  name="Home" component={Home} />
         <Stack.Screen  name="ItemDetail" component={ItemDetail} />
+        <Stack.Screen  name="ForgotPassword" component={ForgotPassword} />
+        <Stack.Screen  name="Register" component={Register} />
       </Stack.Navigator>
     </NavigationContainer>
   )

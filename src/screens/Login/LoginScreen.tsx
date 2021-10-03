@@ -8,7 +8,7 @@ const Login = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>Mobile-BTL</Text>
+      <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>Mobile-312312BTL</Text>
       <TextInput
         style={styles.input}
         onChangeText={setUsername}
@@ -30,12 +30,20 @@ const Login = () => {
         style={styles.registerBtn}
         onPress={()=>{}}
       >
+        
+      <TouchableOpacity
+        //@ts-ignore
+        onPress={()=> navigation.navigate('Register')}
+      >
         <Text style={{fontWeight: 'bold'}}>Register</Text>
         <View style={{width: 60, height: 2, backgroundColor: 'black'}}/>
+
+      </TouchableOpacity>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.forgotBtn}
-        onPress={()=> {}}
+        //@ts-ignore
+        onPress={()=> navigation.navigate('ForgotPassword')}
       >
         <Text>Forgot Password?</Text>
       </TouchableOpacity>
