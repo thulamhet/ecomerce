@@ -8,6 +8,7 @@ import ItemDetail from "./screens/ItemDetail";
 import Login from "./screens/Login/LoginScreen";
 import ForgotPassword from "./screens/Login/ForgotPasswordScreen";
 import Register from "./screens/Login/RegisterScreen";
+import Profile from "./screens/Profile";
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           headerShown: false
         }}
       > 
+        <Stack.Screen  name="Profile" component={Profile} />
         <Stack.Screen  name="Login" component={Login} />
         <Stack.Screen  name="Home" component={Home} />
         <Stack.Screen  name="ItemDetail" component={ItemDetail} />

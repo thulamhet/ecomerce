@@ -6,7 +6,8 @@ import {
     Text,
     Image,
     TouchableOpacity,
-    FlatList
+    FlatList,
+    ScrollView
 } from 'react-native'
 
 import { images, icons, COLORS, FONTS, SIZES } from '../constants';
@@ -77,6 +78,7 @@ const ScrollableCard = ({ navigation, productList }) => {
                 renderItem={renderCard}
                 keyExtractor={item => `${item.productId}`}
             />
+       
         </View>
     )
 }
@@ -331,6 +333,7 @@ const Home = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
+        {/* <ScrollView> */}
             {renderHeader()}
 
             {renderTitle(selectedTab.title)}
@@ -350,8 +353,9 @@ const Home = ({ navigation }) => {
 
             {/* Footer - Promotion Card */}
             <View style={{ height: "19%", justifyContent: 'flex-end' }}>
-                {renderPromotionCard()}
+                {/* {renderPromotionCard()} */}
             </View>
+            {/* </ScrollView> */}
         </SafeAreaView>
     )
 }
